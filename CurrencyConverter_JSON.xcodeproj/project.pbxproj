@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA106C82260E06D000C99B80 /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA106C81260E06D000C99B80 /* CurrencyManager.swift */; };
 		FA5EF15F260DED56003B04F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5EF15E260DED56003B04F6 /* AppDelegate.swift */; };
 		FA5EF161260DED56003B04F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5EF160260DED56003B04F6 /* SceneDelegate.swift */; };
 		FA5EF163260DED56003B04F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5EF162260DED56003B04F6 /* ViewController.swift */; };
 		FA5EF166260DED56003B04F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5EF164260DED56003B04F6 /* Main.storyboard */; };
 		FA5EF168260DED58003B04F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5EF167260DED58003B04F6 /* Assets.xcassets */; };
 		FA5EF16B260DED58003B04F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5EF169260DED58003B04F6 /* LaunchScreen.storyboard */; };
+		FA5EF17B260DFE47003B04F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5EF17A260DFE47003B04F6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA106C81260E06D000C99B80 /* CurrencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
 		FA5EF15B260DED56003B04F6 /* CurrencyConverter_JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter_JSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5EF15E260DED56003B04F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA5EF160260DED56003B04F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		FA5EF167260DED58003B04F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5EF16A260DED58003B04F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5EF16C260DED58003B04F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5EF17A260DFE47003B04F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA106C80260E06BC00C99B80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA106C81260E06D000C99B80 /* CurrencyManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FA5EF152260DED56003B04F6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +68,49 @@
 		FA5EF15D260DED56003B04F6 /* CurrencyConverter_JSON */ = {
 			isa = PBXGroup;
 			children = (
-				FA5EF15E260DED56003B04F6 /* AppDelegate.swift */,
-				FA5EF160260DED56003B04F6 /* SceneDelegate.swift */,
-				FA5EF162260DED56003B04F6 /* ViewController.swift */,
-				FA5EF164260DED56003B04F6 /* Main.storyboard */,
-				FA5EF167260DED58003B04F6 /* Assets.xcassets */,
-				FA5EF169260DED58003B04F6 /* LaunchScreen.storyboard */,
-				FA5EF16C260DED58003B04F6 /* Info.plist */,
+				FA106C80260E06BC00C99B80 /* Model */,
+				FA5EF179260DFE36003B04F6 /* Extensions */,
+				FA5EF176260DFD6E003B04F6 /* Controller */,
+				FA5EF175260DFD5F003B04F6 /* View */,
+				FA5EF173260DFD40003B04F6 /* Supporting Files */,
 			);
 			path = CurrencyConverter_JSON;
+			sourceTree = "<group>";
+		};
+		FA5EF173260DFD40003B04F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA5EF160260DED56003B04F6 /* SceneDelegate.swift */,
+				FA5EF15E260DED56003B04F6 /* AppDelegate.swift */,
+				FA5EF167260DED58003B04F6 /* Assets.xcassets */,
+				FA5EF16C260DED58003B04F6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA5EF175260DFD5F003B04F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA5EF164260DED56003B04F6 /* Main.storyboard */,
+				FA5EF169260DED58003B04F6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA5EF176260DFD6E003B04F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA5EF162260DED56003B04F6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA5EF179260DFE36003B04F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA5EF17A260DFE47003B04F6 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5EF163260DED56003B04F6 /* ViewController.swift in Sources */,
+				FA106C82260E06D000C99B80 /* CurrencyManager.swift in Sources */,
 				FA5EF15F260DED56003B04F6 /* AppDelegate.swift in Sources */,
 				FA5EF161260DED56003B04F6 /* SceneDelegate.swift in Sources */,
+				FA5EF17B260DFE47003B04F6 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHK3PT3MZR;
-				INFOPLIST_FILE = CurrencyConverter_JSON/Info.plist;
+				INFOPLIST_FILE = "CurrencyConverter_JSON/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHK3PT3MZR;
-				INFOPLIST_FILE = CurrencyConverter_JSON/Info.plist;
+				INFOPLIST_FILE = "CurrencyConverter_JSON/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
